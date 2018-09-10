@@ -73,17 +73,17 @@ while True:
         (x, y, w, h) = cv2.boundingRect(c)
         cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
 
-        cv2.line(frame, (width / 2, 0), (width, 450), (250, 0, 1), 2) #blue line
-        cv2.line(frame, (width / 2 - 50, 0), (width - 50, 450), (0, 0, 255), 2)#red line
+        cv2.line(frame, (width // 2, 0), (width, 450), (250, 0, 1), 2) #blue line
+        cv2.line(frame, (width // 2 - 50, 0), (width - 50, 450), (0, 0, 255), 2)#red line
 
 
-        rectagleCenterPont = ((x + x + w) /2, (y + y + h) /2)
+        rectagleCenterPont = ((x + x + w) // 2, (y + y + h) // 2)
         cv2.circle(frame, rectagleCenterPont, 1, (0, 0, 255), 5)
 
-        if(testIntersectionIn((x + x + w) / 2, (y + y + h) / 2)):
+        if(testIntersectionIn((x + x + w) // 2, (y + y + h) // 2)):
             textIn += 1
 
-        if(testIntersectionOut((x + x + w) / 2, (y + y + h) / 2)):
+        if(testIntersectionOut((x + x + w) // 2, (y + y + h) // 2)):
             textOut += 1
 
         # draw the text and timestamp on the frame
