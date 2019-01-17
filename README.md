@@ -4,9 +4,9 @@ This program count incoming and outcoming people, who crooss by hall.
 write little program, which been counting incoming and outcoming people.
   I use OpenCV and Python 2.7
   So, begining you need install all dependensies:
-   #pip install datetime
-   #pip install imutils
-   #pip install opencv-python
+  
+   pip install --trusted-host pypi.python.org -r requirements.txt
+
    Use "import" for importing this library in project
    
    For running program write in command line 
