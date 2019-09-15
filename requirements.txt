@@ -1,3 +1,5 @@
 datetime
 imutils
 opencv-python
+socketio
+requests
