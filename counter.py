@@ -80,7 +80,7 @@ while True:
         # test if person in on store
         if (testIntersectionIn((x + x + w) / 2, (y + y + h) / 2)):
             textIn += 1
-            socket.emit('more-one-person')
+            socket.emit('entryPerson', {})
 
     # map the quit button
     if cv2.waitKey(1) & 0xFF == ord('q'):
